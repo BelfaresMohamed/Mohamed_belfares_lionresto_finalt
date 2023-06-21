@@ -11,12 +11,12 @@
     <header class="d-lg-flex align-items-lg-center justify-content-lg-evenly">
         <a href="" class="logo fw-bolder text-black">LionsResto<span class="text-danger">.</span></a>
         <div class="nav d-lg-flex align-items-lg-center justify-content-lg-around">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#events">Events</a>
-            <a href="#chefs">Chefs</a>
-            <a href="#gallery">Gallery</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Events</a>
+            <a href="#">Chefs</a>
+            <a href="#">Gallery</a>
 
             <select class="dropbtn">
                 <option disabled selected>Drop down</option>
@@ -30,11 +30,64 @@
             <a href="#contact">Contact</a>
         </div>
 
-        <button class="btn button-dark dark-mode bg-black text-white rounded-pill d-flex justify-content-between align-items-center "><i class="fa-solid fa-moon me-2"></i>Dark Mode</button>
+        <!-- <button class="btn button-dark dark-mode bg-black text-white rounded-pill d-flex justify-content-between align-items-center "><i class="fa-solid fa-moon me-2"></i>Dark Mode</button> -->
         <button class="btn modal1 rounded-pill text-white " id="modal1">Connexion</button>
 
 
     </header>
+    <main>
+        <section class="modalBody">
+
+            <div class="contenu container1" id="modal1">
+                <div class="typeconnection w-100 d-flex">
+                    <div
+                        class="signupBTn w-50 h-100 d-flex align-items-center justify-content-center border border-1 border-start text-danger ">
+                        Signup</div>
+                    <div
+                        class="loginBtn w-50 h-100 d-flex align-items-center justify-content-center border border-1 border-start text-danger active-area">
+                        Login</div>
+                </div>
+                <div class="signup">
+
+                    <h2 class="joining text-dark text-center">Join us</h2>
+                    <form action="">
+
+                        <input type="text" class="singup-input singup-user" id="username" placeholder="Username">
+                        <input type="email" class="singup-input singup-mail" id="emailsingup" placeholder="email">
+                        <input type="password" class="singup-input singup-password" id="passwordsingup"
+                            placeholder="password">
+                        <input type="password" class="singup-input singup-confirm" id="confirmsingup"
+                            placeholder="confirm password">
+
+
+                    </form>
+                    <button class="singup-button btn mb-3 w-25 position-absolute bottom-0 bg-danger text-white"
+                        id="collect-data">Sing up</button>
+                    <button
+                        class="close-button btn mb-3 w-25 position-absolute bottom-0 bg-dark text-white">Close</button>
+                </div>
+                <div class="login">
+                    <h2 class="joining text-dark text-center">login</h2>
+                    <form action="">
+
+                        <input type="email" class="singup-input singup-mail" id="emailsingup" placeholder="email">
+                        <input type="password" class="singup-input singup-password" id="passwordsingup" placeholder="password">
+
+                    </form>
+                    <button class="singup-button btn mb-3 w-25 position-absolute bottom-0 bg-danger text-white"
+                        id="collect-data">login</button>
+                    <button
+                        class="close-button btn mb-3 w-25 position-absolute bottom-0 bg-dark text-white">Close</button>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+    </main>
 
 
 

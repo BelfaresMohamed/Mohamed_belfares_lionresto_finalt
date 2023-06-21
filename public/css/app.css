@@ -11909,7 +11909,94 @@ select {
   background-color: #ce1111;
 }
 .modal1:hover {
-  background-color: #660a0a;
+  background-color: #ef7c7c;
+}
+
+.contenu {
+  width: 30vw;
+  height: 60vh;
+  border: 3px solid #ce1111;
+  position: fixed;
+  left: 50%;
+  top: 25%;
+  border-radius: 20px;
+  transform: translate(-50%, -5%);
+  background-color: #ffffff;
+  transition: 0.4s ease;
+  overflow: hidden;
+  z-index: 9999;
+  transition: 0.8s ease;
+  display: none;
+}
+.contenu .active-area {
+  background-color: #ce1111;
+  color: white !important;
+  transition: 0.5s ease;
+}
+
+.typeconnection {
+  height: 15%;
+}
+
+.signup,
+.login {
+  position: relative;
+  height: 85%;
+  display: none;
+}
+.signup input,
+.login input {
+  width: 60%;
+  height: 6vh;
+  background-color: transparent;
+  outline: 1px solid #f5deb3;
+  border-radius: 1vw;
+  color: black;
+  text-align: center;
+  font-size: 1.2vw;
+  position: absolute;
+}
+.signup .singup-input,
+.login .singup-input {
+  height: 5vh;
+}
+.signup .singup-user,
+.login .singup-user {
+  top: 20%;
+  left: 20%;
+}
+.signup .singup-mail,
+.login .singup-mail {
+  top: 35%;
+  left: 20%;
+}
+.signup .singup-password,
+.login .singup-password {
+  top: 50%;
+  left: 20%;
+}
+.signup .singup-confirm,
+.login .singup-confirm {
+  top: 65%;
+  left: 20%;
+}
+.signup .singup-button,
+.login .singup-button {
+  left: 20%;
+}
+.signup .close-button,
+.login .close-button {
+  left: 60%;
+}
+
+.signupBTn,
+.loginBtn {
+  cursor: pointer !important;
+}
+
+.login {
+  display: block;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=app.css.map */

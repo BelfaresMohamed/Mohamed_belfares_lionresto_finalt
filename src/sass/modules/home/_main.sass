@@ -1,0 +1,66 @@
+
+.contenu
+    width: 30vw
+    height: 60vh
+    border: 3px solid $red
+    position: fixed
+    left: 50%
+    top: 25%
+    border-radius: 20px
+    transform: translate(-50%, -5%)
+    background-color: #ffffff
+    transition: 0.4s ease
+    overflow: hidden
+    z-index: 9999
+    transition: 0.8s ease
+    display: none
+    .active-area
+        background-color: $red
+        color: white !important
+        transition: 0.5s ease
+.typeconnection
+    height: 15%
+.signup,
+.login
+    position: relative
+    height: 85%
+    display: none
+
+    input
+        width: 60%
+        height: 6vh
+        background-color: transparent
+        outline: 1px solid #f5deb3
+        border-radius: 1vw
+        color: black
+        text-align: center
+        font-size: 1.2vw
+        position: absolute
+    .singup-input
+        height: 5vh
+
+    .singup-user
+        top: 20%
+        left: 20%
+
+    .singup-mail
+        top: 35%
+        left: 20%
+
+    .singup-password
+        top: 50%
+        left: 20%
+
+    .singup-confirm
+        top: 65%
+        left: 20%
+    .singup-button
+        left: 20%
+    .close-button
+        left: 60%
+.signupBTn,
+.loginBtn
+    cursor: pointer !important
+.login
+    display: block
+    font-style: italic
