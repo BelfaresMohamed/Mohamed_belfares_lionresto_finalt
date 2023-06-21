@@ -1,9 +1,9 @@
-body
 header
-    height: 11vh
-    background-color: #fff
+    height: 13vh
+    font-size: 1.2vw
+    background-color: white
     .nav
-        width: 50%
+        width: 55%
         height: 100%
         a
             text-decoration: none
@@ -21,7 +21,7 @@ header
                 left: 0
                 width: 0
                 height: 2px
-                background-color: #f90000
+                background-color: red
                 transition: width 0.3s ease
             &:hover:before
                 width: 100%
@@ -36,11 +36,29 @@ select
     font-size: 1.7vw
     text-decoration: none
 
-
 .modal1
     background-color: $red
     &:hover
-        background-color: #ef7c7c
+        background-color: #660a0a
 
-
-
+@media screen and (max-width: 425px)
+    header
+        height: 10vh
+        font-size: 1.2vw
+        background-color: white
+        .logo
+            font-size: 4vw
+        .nav
+            position: fixed
+            top: 0
+            right: -100%
+            width: 98%
+            font-size: 4vw
+            height: 100vh
+            flex-direction: column
+            align-items: start !important
+            justify-content: center
+            z-index: 1
+            background-color: white
+            a
+                margin-left: 5vw

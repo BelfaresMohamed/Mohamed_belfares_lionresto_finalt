@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
-    <header class="d-lg-flex align-items-lg-center justify-content-lg-evenly">
+            <!-- !navbar -->
+
+    <header class="d-flex align-items-center justify-content-lg-evenly justify-content-around">
         <a href="" class="logo fw-bolder text-black">LionsResto<span class="text-danger">.</span></a>
-        <div class="nav d-lg-flex align-items-lg-center justify-content-lg-around">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Events</a>
-            <a href="#">Chefs</a>
-            <a href="#">Gallery</a>
+        <div class="nav  d-flex  align-items-center justify-content-lg-around">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#events">Events</a>
+            <a href="#chefs">Chefs</a>
+            <a href="#gallery">Gallery</a>
 
             <select class="dropbtn">
                 <option disabled selected>Drop down</option>
@@ -30,15 +32,15 @@
             <a href="#contact">Contact</a>
         </div>
 
-        <!-- <button class="btn button-dark dark-mode bg-black text-white rounded-pill d-flex justify-content-between align-items-center "><i class="fa-solid fa-moon me-2"></i>Dark Mode</button> -->
-        <button class="btn modal1 rounded-pill text-white " id="modal1">Connexion</button>
-
+        <button class="btn modal1 rounded-pill text-white ms-lg-0 ms-8 " id="modal1">Connexion</button>
+        <i class="menubar fa-solid fa-bars d-lg-none fs-1"></i>
 
     </header>
     <main>
+        <!-- !modal -->
         <section class="modalBody">
 
-            <div class="contenu container1" id="modal1">
+            <div class="corp container1" id="modal1">
                 <div class="typeconnection w-100 d-flex">
                     <div
                         class="signupBTn w-50 h-100 d-flex align-items-center justify-content-center border border-1 border-start text-danger ">
@@ -49,7 +51,7 @@
                 </div>
                 <div class="signup">
 
-                    <h2 class="joining text-dark text-center">Join us</h2>
+                    <h2 class="joining text-dark text-cente mt-1">Join us</h2>
                     <form action="">
 
                         <input type="text" class="singup-input singup-user" id="username" placeholder="Username">
@@ -67,11 +69,12 @@
                         class="close-button btn mb-3 w-25 position-absolute bottom-0 bg-dark text-white">Close</button>
                 </div>
                 <div class="login">
-                    <h2 class="joining text-dark text-center">login</h2>
+                    <h2 class="joining text-dark text-center mt-1">login</h2>
                     <form action="">
 
                         <input type="email" class="singup-input singup-mail" id="emailsingup" placeholder="email">
-                        <input type="password" class="singup-input singup-password" id="passwordsingup" placeholder="password">
+                        <input type="password" class="singup-input singup-password" id="passwordsingup"
+                            placeholder="password">
 
                     </form>
                     <button class="singup-button btn mb-3 w-25 position-absolute bottom-0 bg-danger text-white"
@@ -85,10 +88,26 @@
             </div>
 
         </section>
+                <!-- !Section 1 -->
 
+        <section class="section1 position-relative d-flex flex-lg-row align-items-center justify-content-around">
+            <div class="sec1-div h-50  d-flex align-items-start justify-content-evenly flex-column">
+                <h1 class="">Enjoy your Healthy delecious food</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis saepe vel doloribus esse sunt
+                    ducimus, sit quos incidunt deleniti.</p>
+                    <div class="btnat d-flex align-items-start w-100">
+                        <button class="btn rounded-pill booking bg-red text-white">Book a table</button>
+                        <button class="btn rounded-pill watching bg-transparent d-flex align-items-center"> <i class="fa-regular fa-circle-play me-1"></i>Watch video</button>
+
+                    </div>
+            </div>
+            <img width="35%" src="./public/img/hero-img.png" alt="">
+
+
+        </section>
+        
 
     </main>
-
 
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
