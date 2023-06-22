@@ -1,14 +1,15 @@
 
-.corp
+.contenu
     width: 30vw
-    height: 60vh
+    height: 65vh
     border: 3px solid $red
     position: fixed
     left: 50%
-    top: 5%
+    top: 20%
     border-radius: 20px
     transform: translate(-50%, -5%)
-    background-color: #cec0c0
+    background-color: #fffefee1
+    box-shadow: 6px 5px 4px 0px
     transition: 0.4s ease
     overflow: hidden
     z-index: 9999
@@ -25,13 +26,13 @@
     position: relative
     height: 85%
     display: none
-
     input
-        width: 60%
+        width: 80%
         height: 6vh
         background-color: transparent
-        outline: 1px solid #f5deb3
-        border-radius: 1vw
+        outline: 1px solid $red
+        margin-bottom: 1vh
+        border-radius: 50px
         color: black
         text-align: center
         font-size: 1.2vw
@@ -41,19 +42,19 @@
 
     .singup-user
         top: 20%
-        left: 20%
+        left: 10%
 
     .singup-mail
         top: 35%
-        left: 20%
+        left: 10%
 
     .singup-password
         top: 50%
-        left: 20%
+        left: 10%
 
     .singup-confirm
         top: 65%
-        left: 20%
+        left: 10%
     .singup-button
         left: 20%
     .close-button
@@ -66,15 +67,107 @@
 //***********************
 .section1
     height: 90vh
-    background-color: $gray 
+    background-color: $bg-gray
     div
         width: 35%
         font-size: 1.2vw
         h1
-            font-family: "amatic" 
+            font-family: "amatic"
         button
-            width: 35%
-            font-size: 1.5vw
+            width: 45%
+            font-size: 1.3vw
             i
-                font-size: 1.5vw
+                font-size: 2vw
                 color: $red
+.minisect1
+    width: 100%
+    height: 100vh
+    position: fixed
+    top: 0
+    overflow-y: hidden
+    background-color: #000000d5
+    display: none
+    i:hover
+        cursor: pointer
+
+//////////////////******************** mobiiiiiiile        version    //////
+@media screen and (max-width: 426px)
+    .contenu
+        background-color: #fffefe
+
+        width: 80%
+    .signup,
+    .login
+        position: relative
+        height: 70%
+        display: none
+        input
+            font-size: 3.5vw
+            height: 7vh
+    .section1
+        img
+            width: 60%
+            
+
+        div
+            width: 90%
+            font-size: 3vw
+            h1
+                width: 80%
+                text-align: center
+            button
+                width: 35%
+                font-size: 3vw
+                height: 6vh
+                i
+                    font-size: 4vw
+                    color: $red
+    .minisect1
+        background-color: #000000f8
+        display: none
+        i:hover
+            cursor: pointer
+        iframe
+            width: 96%
+            height: 240px
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+    .contenu
+        background-color: #fffefe
+        width: 80%
+    .signup,
+    .login
+        position: relative
+        height: 80%
+        display: none
+        input
+            font-size: 3.5vw
+            height: 7vh
+    .section1
+        height: 120vh
+        img
+            width: 80%
+            
+
+        div
+            width: 90%
+            font-size: 2.5vw
+            text-align: center
+            h1
+                width: 80%
+            button
+                width: 35%
+                font-size: 3vw
+                i
+                    font-size: 4vw
+                    color: $red
+    .login
+        display: block
+    .minisect1
+        background-color: #000000f8
+        display: none
+    i:hover
+        cursor: pointer
+    iframe
+        width: 96%
+        height: 480px

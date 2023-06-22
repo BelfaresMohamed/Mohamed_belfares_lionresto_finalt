@@ -13332,10 +13332,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "amatic";
+  src: url("../../public/fonts/AmaticSC-Regular.ttf");
+}
+@font-face {
+  font-family: "amatic-bold";
+  src: url("../../public/fonts/AmaticSC-Bold.ttf");
+}
 header {
-  height: 13vh;
-  font-size: 1.2vw;
-  background-color: white;
+  height: 10vh;
+  font-size: 1vw;
 }
 header .nav {
   width: 55%;
@@ -13411,24 +13418,63 @@ select {
   header .nav a {
     margin-left: 5vw;
   }
+  button {
+    height: 60%;
+  }
 }
-.corp {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 10vh;
+    font-size: 1.2vw;
+    background-color: white;
+  }
+  header .logo {
+    font-size: 4vw;
+  }
+  header .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    font-size: 2vw;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: center;
+    z-index: 1;
+    background-color: white;
+  }
+  header .nav a {
+    margin-left: 5vw;
+    padding: 20px;
+  }
+  select {
+    margin-left: 2vw;
+    padding: 20px;
+  }
+  .options-div {
+    width: 25%;
+  }
+}
+.contenu {
   width: 30vw;
-  height: 60vh;
+  height: 65vh;
   border: 3px solid #ce1111;
   position: fixed;
   left: 50%;
-  top: 5%;
+  top: 20%;
   border-radius: 20px;
   transform: translate(-50%, -5%);
-  background-color: #cec0c0;
+  background-color: rgba(255, 254, 254, 0.8823529412);
+  box-shadow: 6px 5px 4px 0px;
   transition: 0.4s ease;
   overflow: hidden;
   z-index: 9999;
   transition: 0.8s ease;
   display: none;
 }
-.corp .active-area {
+.contenu .active-area {
   background-color: #ce1111;
   color: white !important;
   transition: 0.5s ease;
@@ -13446,11 +13492,12 @@ select {
 }
 .signup input,
 .login input {
-  width: 60%;
+  width: 80%;
   height: 6vh;
   background-color: transparent;
-  outline: 1px solid #f5deb3;
-  border-radius: 1vw;
+  outline: 1px solid #ce1111;
+  margin-bottom: 1vh;
+  border-radius: 50px;
   color: black;
   text-align: center;
   font-size: 1.2vw;
@@ -13463,22 +13510,22 @@ select {
 .signup .singup-user,
 .login .singup-user {
   top: 20%;
-  left: 20%;
+  left: 10%;
 }
 .signup .singup-mail,
 .login .singup-mail {
   top: 35%;
-  left: 20%;
+  left: 10%;
 }
 .signup .singup-password,
 .login .singup-password {
   top: 50%;
-  left: 20%;
+  left: 10%;
 }
 .signup .singup-confirm,
 .login .singup-confirm {
   top: 65%;
-  left: 20%;
+  left: 10%;
 }
 .signup .singup-button,
 .login .singup-button {
@@ -13500,7 +13547,7 @@ select {
 
 .section1 {
   height: 90vh;
-  background-color: #9dabbb;
+  background-color: #eeeeee;
 }
 .section1 div {
   width: 35%;
@@ -13510,12 +13557,127 @@ select {
   font-family: "amatic";
 }
 .section1 div button {
-  width: 35%;
-  font-size: 1.5vw;
+  width: 45%;
+  font-size: 1.3vw;
 }
 .section1 div button i {
-  font-size: 1.5vw;
+  font-size: 2vw;
   color: #ce1111;
+}
+
+.minisect1 {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.8352941176);
+  display: none;
+}
+.minisect1 i:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+  .contenu {
+    background-color: #fffefe;
+    width: 80%;
+  }
+  .signup,
+  .login {
+    position: relative;
+    height: 70%;
+    display: none;
+  }
+  .signup input,
+  .login input {
+    font-size: 3.5vw;
+    height: 7vh;
+  }
+  .section1 img {
+    width: 60%;
+  }
+  .section1 div {
+    width: 90%;
+    font-size: 3vw;
+  }
+  .section1 div h1, .section1 div .h1 {
+    width: 80%;
+    text-align: center;
+  }
+  .section1 div button {
+    width: 35%;
+    font-size: 3vw;
+    height: 6vh;
+  }
+  .section1 div button i {
+    font-size: 4vw;
+    color: #ce1111;
+  }
+  .minisect1 {
+    background-color: rgba(0, 0, 0, 0.9725490196);
+    display: none;
+  }
+  .minisect1 i:hover {
+    cursor: pointer;
+  }
+  .minisect1 iframe {
+    width: 96%;
+    height: 240px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenu {
+    background-color: #fffefe;
+    width: 80%;
+  }
+  .signup,
+  .login {
+    position: relative;
+    height: 80%;
+    display: none;
+  }
+  .signup input,
+  .login input {
+    font-size: 3.5vw;
+    height: 7vh;
+  }
+  .section1 {
+    height: 120vh;
+  }
+  .section1 img {
+    width: 80%;
+  }
+  .section1 div {
+    width: 90%;
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  .section1 div h1, .section1 div .h1 {
+    width: 80%;
+  }
+  .section1 div button {
+    width: 35%;
+    font-size: 3vw;
+  }
+  .section1 div button i {
+    font-size: 4vw;
+    color: #ce1111;
+  }
+  .login {
+    display: block;
+  }
+  .minisect1 {
+    background-color: rgba(0, 0, 0, 0.9725490196);
+    display: none;
+  }
+  i:hover {
+    cursor: pointer;
+  }
+  iframe {
+    width: 96%;
+    height: 480px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

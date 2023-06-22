@@ -1,7 +1,6 @@
 header
-    height: 13vh
-    font-size: 1.2vw
-    background-color: white
+    height: 10vh
+    font-size: 1vw
     .nav
         width: 55%
         height: 100%
@@ -62,3 +61,35 @@ select
             background-color: white
             a
                 margin-left: 5vw
+    button
+        height: 60%
+        
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+    header
+        height: 10vh
+        font-size: 1.2vw
+        background-color: white
+        .logo
+            font-size: 4vw
+        .nav
+            position: fixed
+            top: 0
+            right: -100%
+            width: 50%
+            font-size: 2vw
+            height: 100vh
+            overflow: hidden
+            flex-direction: column
+            align-items: start !important
+            justify-content: center
+            z-index: 1
+            background-color: white
+            a
+                margin-left: 5vw
+                padding: 20px
+    select
+        margin-left: 2vw
+        padding: 20px
+    .options-div
+        width: 25%
