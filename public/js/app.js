@@ -105,5 +105,74 @@ imgYtb.addEventListener("click", () => {
     })
 })
 
+let starterBtn = document.querySelector(".starter-btn")
+let breakfeastBtn = document.querySelector(".breakfeast-btn")
+let lunchBtn = document.querySelector(".lunch-btn")
+let dinnerBtn = document.querySelector(".dinner-btn")
+let startertable = document.querySelector(".starter-table")
+let breakfeasttable = document.querySelector(".breakfeast-table")
+let lunchtable = document.querySelector(".lunch-table")
+let dinnertable = document.querySelector(".dinner-table")
+let itemsTable = document.querySelectorAll(".items-table")
 
+starterBtn.addEventListener("click", () => {
+    itemsTable.forEach(element => {
+        if (element.classList.contains("starter-table")) {
+            setTimeout(() => {
+                element.style.display = "block"
+                element.style.transition = "0.5s ease"
+            }, 200);
+        } else {
+            element.style.display = "none"
+        }
+
+    });
+
+})
+
+//!2nd
+breakfeastBtn.addEventListener("click", () => {
+    itemsTable.forEach(element => {
+        if (element.classList.contains("breakfeast-table")) {
+            setTimeout(() => {
+                element.style.display = "block"
+                element.style.transition = "0.5s ease"
+            }, 200);
+        } else {
+            element.style.display = "none"
+        }
+
+    });
+
+})
+//! 3rd
+lunchBtn.addEventListener("click", () => {
+    itemsTable.forEach(element => {
+        if (element.classList.contains("lunch-table")) {
+            setTimeout(() => {
+                element.style.display = "block"
+                element.style.transition = "0.5s ease"
+            }, 200);
+        } else {
+            element.style.display = "none"
+        }
+
+    });
+
+})
+//! 4th
+dinnerBtn.addEventListener("click", () => {
+    itemsTable.forEach(element => {
+        if (element.classList.contains("dinner-table")) {
+            setTimeout(() => {
+                element.style.display = "block"
+                element.style.transition = "0.5s ease"
+            }, 200);
+        } else {
+            element.style.display = "none"
+        }
+
+    });
+
+})
 

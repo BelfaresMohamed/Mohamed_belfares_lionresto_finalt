@@ -145,6 +145,64 @@
         flex-wrap: wrap
         .numbers
             width: 25%
+#menu
+    height: 180vh
+    .items-link
+        height: 5%
+        .links
+            height: 100%
+            width: 20%
+            button
+                background-color: transparent
+                border: none
+                text-decoration: none
+                position: relative
+
+                color: $gray
+                font-size: 1.5vw
+                &:before
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 10%
+                    width: 80%
+                    height: 2px
+                    background-color: darkgray
+                &:hover:before
+                    transition: width 0.3s ease
+                    background-color: red
+                    width: 80%
+                &:focus
+                    color: $red
+                &:focus:before
+                    background-color: red
+    .items-tab
+        .starter-table,
+        .breakfeast-table,
+        .lunch-table,
+        .dinner-table
+            width: 80%
+            height: 140vh
+            display: none
+            .items-list
+                height: 90%
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-around
+                .item
+                    height: 48%
+                    width: 30%
+                    display: flex
+                    align-items: center
+                    justify-content: space-around
+                    flex-direction: column
+                    img
+                        height: 60%
+
+        .starter-table
+            display: block
+
 /////////////////////////mobiiiiiiile/////////////////////
 @media screen and (max-width: 425px)
     .contenu
@@ -248,8 +306,61 @@
             .numbers
                 width: 100%
                 font-size: 5vw
+    #menu
+        height: 180vh
+        .items-link
+            height: 5%
+            .links
+                height: 100%
+                width: 40%
+                button
+                    background-color: transparent
+                    border: none
+                    text-decoration: none
+                    position: relative
+                    font-size: 3vw
+                    color: $gray
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: 0
+                        left: 10%
+                        width: 80%
+                        height: 2px
+                        background-color: darkgray
+                    &:hover:before
+                        transition: width 0.3s ease
+                        background-color: red
+                        width: 80%
+                    &:focus:before
+                        background-color: red
+        .items-tab
+            .starter-table,
+            .breakfeast-table,
+            .lunch-table,
+            .dinner-table
+                width: 80%
+                height: 140vh
+                display: none
+                .items-list
+                    height: 90%
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    justify-content: space-around
+                    .item
+                        height: 48%
+                        width: 100%
+                        margin-top: 2vh
+                        display: flex
+                        align-items: center
+                        justify-content: space-around
+                        flex-direction: column
+                        img
+                            height: 60%
 
-
+            .starter-table
+                display: block
 
 //////////////////////////////// tablet ///////////////////////////
 @media screen and (min-width: 768px) and (max-width: 1023px)
@@ -351,4 +462,60 @@
             .numbers
                 width: 50%
                 font-size: 3.5vw
-                
+    #menu
+        height: 180vh
+        .items-link
+            height: 5%
+            .links
+                height: 100%
+                width: 40%
+                button
+                    background-color: transparent
+                    border: none
+                    text-decoration: none
+                    position: relative
+                    font-size: 3vw
+                    color: $gray
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: 0
+                        left: 10%
+                        width: 80%
+                        height: 2px
+                        background-color: darkgray
+                    &:hover:before
+                        transition: width 0.3s ease
+                        background-color: red
+                        width: 80%
+                    &:focus:before
+                        background-color: red
+        .items-tab
+            .starter-table,
+            .breakfeast-table,
+            .lunch-table,
+            .dinner-table
+                width: 80%
+                height: 140vh
+                display: none
+                .items-list
+                    height: 90%
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    justify-content: space-around
+                    .item
+                        height: 48%
+                        width: 100%
+                        margin-top: 5vh
+                        margin-bottom: 2vh
+                        display: flex
+                        align-items: center
+                        justify-content: space-around
+                        flex-direction: column
+                        ma
+                        img
+                            height: 85%
+
+            .starter-table
+                display: block

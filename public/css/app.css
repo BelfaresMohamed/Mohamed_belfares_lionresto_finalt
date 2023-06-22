@@ -13651,6 +13651,83 @@ select {
   width: 25%;
 }
 
+#menu {
+  height: 180vh;
+}
+#menu .items-link {
+  height: 5%;
+}
+#menu .items-link .links {
+  height: 100%;
+  width: 20%;
+}
+#menu .items-link .links button {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  color: #9dabbb;
+  font-size: 1.5vw;
+}
+#menu .items-link .links button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: darkgray;
+}
+#menu .items-link .links button:hover:before {
+  transition: width 0.3s ease;
+  background-color: red;
+  width: 80%;
+}
+#menu .items-link .links button:focus {
+  color: #ce1111;
+}
+#menu .items-link .links button:focus:before {
+  background-color: red;
+}
+#menu .items-tab .starter-table,
+#menu .items-tab .breakfeast-table,
+#menu .items-tab .lunch-table,
+#menu .items-tab .dinner-table {
+  width: 80%;
+  height: 140vh;
+  display: none;
+}
+#menu .items-tab .starter-table .items-list,
+#menu .items-tab .breakfeast-table .items-list,
+#menu .items-tab .lunch-table .items-list,
+#menu .items-tab .dinner-table .items-list {
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+#menu .items-tab .starter-table .items-list .item,
+#menu .items-tab .breakfeast-table .items-list .item,
+#menu .items-tab .lunch-table .items-list .item,
+#menu .items-tab .dinner-table .items-list .item {
+  height: 48%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#menu .items-tab .starter-table .items-list .item img,
+#menu .items-tab .breakfeast-table .items-list .item img,
+#menu .items-tab .lunch-table .items-list .item img,
+#menu .items-tab .dinner-table .items-list .item img {
+  height: 60%;
+}
+#menu .items-tab .starter-table {
+  display: block;
+}
+
 @media screen and (max-width: 425px) {
   .contenu {
     background-color: #fffefe;
@@ -13776,6 +13853,80 @@ select {
   .section4 .number .numbers {
     width: 100%;
     font-size: 5vw;
+  }
+  #menu {
+    height: 180vh;
+  }
+  #menu .items-link {
+    height: 5%;
+  }
+  #menu .items-link .links {
+    height: 100%;
+    width: 40%;
+  }
+  #menu .items-link .links button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    font-size: 3vw;
+    color: #9dabbb;
+  }
+  #menu .items-link .links button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: darkgray;
+  }
+  #menu .items-link .links button:hover:before {
+    transition: width 0.3s ease;
+    background-color: red;
+    width: 80%;
+  }
+  #menu .items-link .links button:focus:before {
+    background-color: red;
+  }
+  #menu .items-tab .starter-table,
+  #menu .items-tab .breakfeast-table,
+  #menu .items-tab .lunch-table,
+  #menu .items-tab .dinner-table {
+    width: 80%;
+    height: 140vh;
+    display: none;
+  }
+  #menu .items-tab .starter-table .items-list,
+  #menu .items-tab .breakfeast-table .items-list,
+  #menu .items-tab .lunch-table .items-list,
+  #menu .items-tab .dinner-table .items-list {
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #menu .items-tab .starter-table .items-list .item,
+  #menu .items-tab .breakfeast-table .items-list .item,
+  #menu .items-tab .lunch-table .items-list .item,
+  #menu .items-tab .dinner-table .items-list .item {
+    height: 48%;
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  #menu .items-tab .starter-table .items-list .item img,
+  #menu .items-tab .breakfeast-table .items-list .item img,
+  #menu .items-tab .lunch-table .items-list .item img,
+  #menu .items-tab .dinner-table .items-list .item img {
+    height: 60%;
+  }
+  #menu .items-tab .starter-table {
+    display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -13905,6 +14056,81 @@ select {
   .section4 .number .numbers {
     width: 50%;
     font-size: 3.5vw;
+  }
+  #menu {
+    height: 180vh;
+  }
+  #menu .items-link {
+    height: 5%;
+  }
+  #menu .items-link .links {
+    height: 100%;
+    width: 40%;
+  }
+  #menu .items-link .links button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    font-size: 3vw;
+    color: #9dabbb;
+  }
+  #menu .items-link .links button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: darkgray;
+  }
+  #menu .items-link .links button:hover:before {
+    transition: width 0.3s ease;
+    background-color: red;
+    width: 80%;
+  }
+  #menu .items-link .links button:focus:before {
+    background-color: red;
+  }
+  #menu .items-tab .starter-table,
+  #menu .items-tab .breakfeast-table,
+  #menu .items-tab .lunch-table,
+  #menu .items-tab .dinner-table {
+    width: 80%;
+    height: 140vh;
+    display: none;
+  }
+  #menu .items-tab .starter-table .items-list,
+  #menu .items-tab .breakfeast-table .items-list,
+  #menu .items-tab .lunch-table .items-list,
+  #menu .items-tab .dinner-table .items-list {
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #menu .items-tab .starter-table .items-list .item,
+  #menu .items-tab .breakfeast-table .items-list .item,
+  #menu .items-tab .lunch-table .items-list .item,
+  #menu .items-tab .dinner-table .items-list .item {
+    height: 48%;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  #menu .items-tab .starter-table .items-list .item img,
+  #menu .items-tab .breakfeast-table .items-list .item img,
+  #menu .items-tab .lunch-table .items-list .item img,
+  #menu .items-tab .dinner-table .items-list .item img {
+    height: 85%;
+  }
+  #menu .items-tab .starter-table {
+    display: block;
   }
 }
 
