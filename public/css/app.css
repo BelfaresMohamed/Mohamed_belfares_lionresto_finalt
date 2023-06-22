@@ -13460,10 +13460,10 @@ select {
 .contenu {
   width: 30vw;
   height: 65vh;
-  border: 3px solid #b8b8b8;
+  border: 3px solid #ce1111;
   position: fixed;
   left: 50%;
-  top: 20%;
+  top: 5%;
   border-radius: 20px;
   transform: translate(-50%, -5%);
   background-color: rgba(255, 254, 254, 0.8823529412);
@@ -13530,12 +13530,12 @@ select {
 .signup .singup-button,
 .login .singup-button {
   left: 20%;
-  height: 8vh;
+  height: 7vh;
 }
 .signup .close-button,
 .login .close-button {
   left: 60%;
-  height: 8vh;
+  height: 7vh;
 }
 
 .signupBTn,
@@ -13581,7 +13581,7 @@ select {
 }
 
 .section2 {
-  height: 120vh;
+  height: 132vh;
 }
 .section2 .sec2-div {
   height: 80%;
@@ -13625,13 +13625,18 @@ select {
   background-color: rgba(196, 87, 87, 0.9333333333);
 }
 .section3 .three-card {
-  height: 90%;
+  height: 100%;
   width: 60%;
+}
+.section3 .three-card .card {
+  width: 30%;
+  padding: 1vw;
 }
 
 @media screen and (max-width: 425px) {
   .contenu {
     background-color: #fffefe;
+    width: 90vh;
     width: 90%;
   }
   .signup,
@@ -13678,17 +13683,19 @@ select {
   }
   .section2 {
     height: 220vh;
+    padding: 4vh;
   }
   .section2 .sec2-div {
-    height: 100%;
+    height: 90%;
     width: 100%;
     margin: 0 !important;
     flex-direction: column;
   }
   .section2 .sec2-div .sect2-minidiv1 {
     width: 100%;
-    height: 90%;
+    height: 50%;
     background-image: url("../../public/img/about.jpg");
+    background-position: center;
   }
   .section2 .sec2-div .sect2-minidiv1 .booknow {
     width: 80%;
@@ -13697,19 +13704,42 @@ select {
   }
   .section2 .sec2-div .sect2-minidiv2 {
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
   .section2 .sec2-div .sect2-minidiv2 li {
     list-style: none;
   }
   .section2 .sec2-div .sect2-minidiv2 .img-ytb {
-    height: 100%;
     background-image: url("../../public/img/about-2.jpg");
     background-size: cover;
+    height: 100%;
   }
   .section2 .sec2-div .sect2-minidiv2 .img-ytb i {
-    font-size: 6vw;
+    font-size: 8vw;
     border-radius: 100%;
+  }
+  .section3 {
+    height: 180vh;
+    font-size: 3.5vw;
+    padding: 5vh;
+  }
+  .section3 .red-card {
+    height: 60%;
+    width: 100%;
+  }
+  .section3 .red-card .learn-more {
+    padding: 2vw !important;
+    height: 4vh;
+    background-color: rgba(196, 87, 87, 0.9333333333);
+  }
+  .section3 .three-card {
+    height: 100%;
+    width: 100%;
+  }
+  .section3 .three-card .card {
+    margin-top: 1vh;
+    height: 90%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -13729,10 +13759,10 @@ select {
     height: 8vh;
   }
   .section1 {
-    height: 120vh;
+    height: 180vh;
   }
   .section1 img {
-    width: 80%;
+    width: 70%;
   }
   .section1 div {
     width: 90%;
@@ -13740,7 +13770,7 @@ select {
     text-align: center;
   }
   .section1 div h1, .section1 div .h1 {
-    width: 80%;
+    width: 60%;
   }
   .section1 div button {
     width: 35%;
@@ -13765,10 +13795,11 @@ select {
     height: 480px;
   }
   .section2 {
-    height: 180vh;
+    height: 250vh;
   }
   .section2 .sec2-div {
     height: 90%;
+    margin-top: 5vh !important;
     width: 90%;
     flex-direction: column;
   }
@@ -13790,7 +13821,7 @@ select {
     list-style: none;
   }
   .section2 .sec2-div .sect2-minidiv2 .img-ytb {
-    height: 90%;
+    height: 70vh;
     background-color: red;
     background-image: url("../../public/img/about-2.jpg");
     background-size: cover;
@@ -13800,18 +13831,26 @@ select {
     border-radius: 100%;
   }
   .section3 {
-    height: 100vh;
+    height: 140vh;
+    padding: 5vw;
+    font-size: 2vw;
   }
   .section3 .red-card {
-    height: 40%;
-    width: 80%;
+    height: 50%;
+    width: 95%;
+    padding: 2vw;
   }
   .section3 .red-card .learn-more {
     background-color: rgba(196, 87, 87, 0.9333333333);
   }
   .section3 .three-card {
+    height: 100%;
+    width: 95%;
+  }
+  .section3 .three-card .card {
+    margin-top: 1vh;
     height: 90%;
-    width: 60%;
+    width: 100%;
   }
 }
 
