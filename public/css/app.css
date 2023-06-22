@@ -13578,7 +13578,7 @@ select {
   cursor: pointer;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 424px) {
   .contenu {
     background-color: #fffefe;
     width: 80%;
