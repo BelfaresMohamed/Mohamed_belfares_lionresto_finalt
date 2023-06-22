@@ -13614,6 +13614,21 @@ select {
   border-radius: 100%;
 }
 
+.section3 {
+  height: 60vh;
+}
+.section3 .red-card {
+  height: 90%;
+  width: 30%;
+}
+.section3 .red-card .learn-more {
+  background-color: rgba(196, 87, 87, 0.9333333333);
+}
+.section3 .three-card {
+  height: 90%;
+  width: 60%;
+}
+
 @media screen and (max-width: 425px) {
   .contenu {
     background-color: #fffefe;
@@ -13783,6 +13798,20 @@ select {
   .section2 .sec2-div .sect2-minidiv2 .img-ytb i {
     font-size: 6vw;
     border-radius: 100%;
+  }
+  .section3 {
+    height: 100vh;
+  }
+  .section3 .red-card {
+    height: 40%;
+    width: 80%;
+  }
+  .section3 .red-card .learn-more {
+    background-color: rgba(196, 87, 87, 0.9333333333);
+  }
+  .section3 .three-card {
+    height: 90%;
+    width: 60%;
   }
 }
 
