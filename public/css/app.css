@@ -13633,6 +13633,24 @@ select {
   padding: 1vw;
 }
 
+.section4 {
+  height: 40vh;
+}
+.section4 .hero {
+  height: 100%;
+  background-image: url("../../public/img/stats-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3);
+  background-attachment: fixed;
+}
+.section4 .number {
+  flex-wrap: wrap;
+}
+.section4 .number .numbers {
+  width: 25%;
+}
+
 @media screen and (max-width: 425px) {
   .contenu {
     background-color: #fffefe;
@@ -13740,6 +13758,24 @@ select {
     margin-top: 1vh;
     height: 90%;
     width: 100%;
+  }
+  .section4 {
+    height: 120vh;
+  }
+  .section4 .hero {
+    height: 100%;
+    background-image: url("../../public/img/stats-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+    background-attachment: fixed;
+  }
+  .section4 .number {
+    flex-wrap: wrap;
+  }
+  .section4 .number .numbers {
+    width: 100%;
+    font-size: 5vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -13851,6 +13887,24 @@ select {
     margin-top: 1vh;
     height: 90%;
     width: 100%;
+  }
+  .section4 {
+    height: 80vh;
+  }
+  .section4 .hero {
+    height: 100%;
+    background-image: url("../../public/img/stats-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+    background-attachment: fixed;
+  }
+  .section4 .number {
+    flex-wrap: wrap;
+  }
+  .section4 .number .numbers {
+    width: 50%;
+    font-size: 3.5vw;
   }
 }
 
