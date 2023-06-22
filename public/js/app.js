@@ -7,6 +7,8 @@ let watching = document.querySelector(".watching")
 let modalbtn = document.querySelector("#modal1")
 let modalContent = document.querySelector(".contenu")
 let signupBTn = document.querySelector(".signupBTn")
+let imgYtb = document.querySelector(".img-ytb")
+let body = document.body
 let loginBtn = document.querySelector(".loginBtn")
 let signup = document.querySelector(".signup")
 let h1 = document.querySelector('h1')
@@ -51,12 +53,14 @@ menubar.addEventListener("click", () => {
         menubar.style.zIndex = '1'
         menubar.classList.remove('fa-bars')
         menubar.classList.add('fa-xmark')
+        body.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
     } else {
         nav.style.right = '-100%'
         nav.style.transition = "0.5s ease"
         menubar.style.zIndex = '3'
         menubar.classList.remove('fa-xmark')
+        body.style.overflow = 'auto';   
         menubar.classList.add('fa-bars')
         document.body.style.overflow = 'auto';
 
@@ -72,10 +76,31 @@ watching.addEventListener("click", () => {
     // close vedio
     minisect1.style.zIndex = '4'
     let minisect1close = minisect1.querySelector("i")
+    body.style.overflow = 'hidden';
+
+
+    minisect1close.addEventListener("click", () => {
+        body.style.overflow = 'auto';
+        minisect1.innerHTML = ``
+        minisect1.style.display = 'none'
+
+    })
+})
+
+imgYtb.addEventListener("click", () => {
+    minisect1.style.display = 'initial'
+    minisect1.innerHTML += `<i class="cursor-pointer fas fa-xmark text-white-50 fs-1 position-fixed end-0 me-3 mt-2"></i>
+    <iframe class="position-fixed top-50 start-50 translate-middle" width="650" height="480" src="https://www.youtube.com/embed/DGWKLguqjno" title="Soufiane Az x Cheikha Rimitti - Nouar (Remix)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+
+    minisect1.style.zIndex = '4'
+    body.style.overflow = 'hidden';
+    let minisect1close = minisect1.querySelector("i")
 
     minisect1close.addEventListener("click", () => {
         minisect1.innerHTML = ``
         minisect1.style.display = 'none'
+        body.style.overflow = 'auto';
+
 
     })
 })
