@@ -13463,7 +13463,7 @@ select {
   border: 3px solid #ce1111;
   position: fixed;
   left: 50%;
-  top: 5%;
+  top: 20%;
   border-radius: 20px;
   transform: translate(-50%, -5%);
   background-color: rgba(255, 254, 254, 0.8823529412);
@@ -13745,6 +13745,10 @@ select {
   padding: 8px;
   border: 3px solid #eeeeee;
   margin-top: 5vh;
+}
+
+.card {
+  margin-bottom: 2vh;
 }
 
 @media screen and (max-width: 425px) {
