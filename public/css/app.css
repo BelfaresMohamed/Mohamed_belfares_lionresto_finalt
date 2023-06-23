@@ -13728,6 +13728,25 @@ select {
   display: block;
 }
 
+.input6 {
+  padding: 8px;
+  margin-top: 10vh;
+  border: 3px solid #eeeeee;
+}
+
+.textarae {
+  width: 40vw;
+  margin-top: 3vh;
+  height: 20vh;
+  border: 1px solid #eeeeee;
+}
+
+.input7 {
+  padding: 8px;
+  border: 3px solid #eeeeee;
+  margin-top: 5vh;
+}
+
 @media screen and (max-width: 425px) {
   .contenu {
     background-color: #fffefe;
@@ -13855,7 +13874,7 @@ select {
     font-size: 5vw;
   }
   #menu {
-    height: 180vh;
+    height: auto;
   }
   #menu .items-link {
     height: 5%;
