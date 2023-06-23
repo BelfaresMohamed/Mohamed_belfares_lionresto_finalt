@@ -13728,6 +13728,111 @@ select {
   display: block;
 }
 
+#events {
+  height: 110vh;
+}
+
+.slider-parent {
+  width: 100%;
+  height: 80vh;
+  overflow-x: hidden;
+}
+
+.slider {
+  width: 31vw;
+  border-radius: 10px;
+  position: relative;
+}
+
+.slides {
+  height: 79vh;
+  display: flex;
+  width: calc(500% + 30vw);
+  display: flex;
+  transition: transform 2s;
+}
+.slides input {
+  display: none;
+}
+.slides .first {
+  margin-left: -20%;
+}
+
+.slide {
+  transition: 2s;
+  width: 18%;
+  margin-left: 3vw;
+  border: 1px solid white;
+}
+
+.navigation-manual {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual-btn {
+  border: 2px solid #ce1111;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.manual-btn:hover {
+  background: #ce1111;
+}
+.manual-btn:focus {
+  background: #ce1111;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+
+.thirddiv .hero {
+  background-image: url("../../public/img/events-3.jpg");
+  background-size: cover;
+  background-position: left;
+  filter: brightness(0.3);
+  height: 100%;
+}
+
+.seconddiv .hero {
+  background-image: url("../../public/img/events-2.jpg");
+  background-size: cover;
+  background-position: left;
+  filter: brightness(0.3);
+  height: 100%;
+}
+
+.firstdiv .hero {
+  background-image: url("../../public/img/events-1.jpg");
+  background-size: cover;
+  background-position: left;
+  filter: brightness(0.3);
+  height: 100%;
+}
+
 @media screen and (max-width: 425px) {
   .contenu {
     background-color: #fffefe;
@@ -13855,7 +13960,7 @@ select {
     font-size: 5vw;
   }
   #menu {
-    height: 180vh;
+    height: 430vh;
   }
   #menu .items-link {
     height: 5%;
@@ -13925,8 +14030,62 @@ select {
   #menu .items-tab .dinner-table .items-list .item img {
     height: 60%;
   }
+  #menu .items-tab .starter-table .items-list .item:hover,
+  #menu .items-tab .breakfeast-table .items-list .item:hover,
+  #menu .items-tab .lunch-table .items-list .item:hover,
+  #menu .items-tab .dinner-table .items-list .item:hover {
+    background-color: rgba(70, 63, 63, 0.8156862745);
+    border-radius: 30px;
+  }
   #menu .items-tab .starter-table {
     display: block;
+  }
+  #events {
+    height: 120vh;
+  }
+  #events .slider-parent {
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+  }
+  #events .slider {
+    width: 100vw;
+    border-radius: 10px;
+    position: relative;
+  }
+  #events .slides {
+    height: 79vh;
+    display: flex;
+    width: calc(500% + 30vw);
+    display: flex;
+    transition: transform 2s;
+  }
+  #events .slides input {
+    display: none;
+  }
+  #events .slides .first {
+    margin-left: -20%;
+  }
+  #events .slide {
+    transition: 2s;
+    width: 18.85%;
+    margin-left: 3vw;
+    border: 1px solid white;
+  }
+  #radio1 ~ .second {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .second {
+    margin-left: 0%;
+  }
+  #radio3:checked ~ .second {
+    margin-left: -19.4%;
+  }
+  #radio4:checked ~ .second {
+    margin-left: -38.82%;
+  }
+  #radio5:checked ~ .second {
+    margin-left: 0%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -14058,7 +14217,7 @@ select {
     font-size: 3.5vw;
   }
   #menu {
-    height: 180vh;
+    height: 480vh;
   }
   #menu .items-link {
     height: 5%;
@@ -14131,6 +14290,53 @@ select {
   }
   #menu .items-tab .starter-table {
     display: block;
+  }
+  #events {
+    height: 120vh;
+  }
+  #events .slider-parent {
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+  }
+  #events .slider {
+    width: 100vw;
+    border-radius: 10px;
+    position: relative;
+  }
+  #events .slides {
+    height: 79vh;
+    display: flex;
+    width: calc(500% + 30vw);
+    display: flex;
+    transition: transform 2s;
+  }
+  #events .slides input {
+    display: none;
+  }
+  #events .slides .first {
+    margin-left: -20%;
+  }
+  #events .slide {
+    transition: 2s;
+    width: 18.85%;
+    margin-left: 3vw;
+    border: 1px solid white;
+  }
+  #radio1 ~ .second {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .second {
+    margin-left: 0%;
+  }
+  #radio3:checked ~ .second {
+    margin-left: -19.4%;
+  }
+  #radio4:checked ~ .second {
+    margin-left: -38.82%;
+  }
+  #radio5:checked ~ .second {
+    margin-left: 0%;
   }
 }
 

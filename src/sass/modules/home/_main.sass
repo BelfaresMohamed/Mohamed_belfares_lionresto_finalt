@@ -202,6 +202,93 @@
 
         .starter-table
             display: block
+#events
+    height: 110vh
+.slider-parent
+    width: 100%
+    height: 80vh
+    overflow-x: hidden
+.slider
+    width: 31vw
+    border-radius: 10px
+    position: relative
+.slides
+    height: 79vh
+    display: flex
+    width: calc(500% + 30vw)
+    display: flex
+    transition: transform 2s
+    input
+        display: none
+    .first
+        margin-left: -20%
+.slide
+    transition: 2s
+    width: 18%
+    margin-left: 3vw
+    border: 1px solid white
+
+.navigation-manual
+    height: 10vh
+    display: flex
+    justify-content: center
+    align-items: center
+.manual-btn
+    border: 2px solid $red
+    padding: 5px
+    border-radius: 10px
+    cursor: pointer
+    transition: 1s
+    &:not(:last-child)
+        margin-right: 40px
+    &:hover
+        background: $red
+    &:focus
+
+        background: $red
+
+#radio1
+    &:checked
+        & ~ .first
+            margin-left: 0
+#radio2
+    &:checked
+        & ~ .first
+            margin-left: -20%
+#radio3
+    &:checked
+        & ~ .first
+            margin-left: -40%
+#radio4
+    &:checked
+        & ~ .first
+            margin-left: -60%
+#radio5
+    &:checked
+        & ~ .first
+            margin-left: -80%
+
+.thirddiv
+    .hero
+        background-image: url("../../public/img/events-3.jpg")
+        background-size: cover
+        background-position: left
+        filter: brightness(0.3)
+        height: 100%
+.seconddiv
+    .hero
+        background-image: url("../../public/img/events-2.jpg")
+        background-size: cover
+        background-position: left
+        filter: brightness(0.3)
+        height: 100%
+.firstdiv
+    .hero
+        background-image: url("../../public/img/events-1.jpg")
+        background-size: cover
+        background-position: left
+        filter: brightness(0.3)
+        height: 100%
 
 /////////////////////////mobiiiiiiile/////////////////////
 @media screen and (max-width: 425px)
@@ -307,7 +394,7 @@
                 width: 100%
                 font-size: 5vw
     #menu
-        height: 180vh
+        height: 430vh
         .items-link
             height: 5%
             .links
@@ -358,9 +445,56 @@
                         flex-direction: column
                         img
                             height: 60%
-
+                        &:hover
+                            background-color: #463f3fd0
+                            border-radius: 30px
             .starter-table
                 display: block
+    #events
+        height: 120vh
+        .slider-parent
+            width: 100%
+            height: 80vh
+            overflow-x: hidden
+        .slider
+            width: 100vw
+            border-radius: 10px
+            position: relative
+        .slides
+            height: 79vh
+            display: flex
+            width: calc(500% + 30vw)
+            display: flex
+            transition: transform 2s
+            input
+                display: none
+            .first
+                margin-left: -20%
+        .slide
+            transition: 2s
+            width: 18.85%
+            margin-left: 3vw
+            border: 1px solid white
+    #radio1
+        &:checked
+        & ~ .second
+            margin-left: 0
+    #radio2
+        &:checked
+            & ~ .second
+                margin-left: 0%
+    #radio3
+        &:checked
+            & ~ .second
+                margin-left: -19.4%
+    #radio4
+        &:checked
+            & ~ .second
+                margin-left: -38.82%
+    #radio5
+        &:checked
+            & ~ .second
+                margin-left: -0%
 
 //////////////////////////////// tablet ///////////////////////////
 @media screen and (min-width: 768px) and (max-width: 1023px)
@@ -463,7 +597,7 @@
                 width: 50%
                 font-size: 3.5vw
     #menu
-        height: 180vh
+        height: 480vh
         .items-link
             height: 5%
             .links
@@ -519,3 +653,48 @@
 
             .starter-table
                 display: block
+    #events
+        height: 120vh
+        .slider-parent
+            width: 100%
+            height: 80vh
+            overflow-x: hidden
+        .slider
+            width: 100vw
+            border-radius: 10px
+            position: relative
+        .slides
+            height: 79vh
+            display: flex
+            width: calc(500% + 30vw)
+            display: flex
+            transition: transform 2s
+            input
+                display: none
+            .first
+                margin-left: -20%
+        .slide
+            transition: 2s
+            width: 18.85%
+            margin-left: 3vw
+            border: 1px solid white
+    #radio1
+        &:checked
+        & ~ .second
+            margin-left: 0
+    #radio2
+        &:checked
+            & ~ .second
+                margin-left: 0%
+    #radio3
+        &:checked
+            & ~ .second
+                margin-left: -19.4%
+    #radio4
+        &:checked
+            & ~ .second
+                margin-left: -38.82%
+    #radio5
+        &:checked
+            & ~ .second
+                margin-left: -0%
