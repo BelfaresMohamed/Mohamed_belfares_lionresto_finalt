@@ -13767,6 +13767,35 @@ select {
   right: 5%;
 }
 
+.bookingtbl {
+  height: 100vh;
+}
+.bookingtbl img {
+  width: 30%;
+  height: 100%;
+}
+
+.booking-area {
+  height: 60vh;
+}
+.booking-area .bookinginput {
+  width: 60%;
+  height: 70%;
+}
+.booking-area .bookinginput .timing {
+  flex-wrap: wrap;
+  height: 30%;
+}
+.booking-area .bookinginput .timing input {
+  width: 28%;
+  padding: 0.5vw;
+}
+.booking-area .bookinginput textarea {
+  width: 96%;
+  outline: 1 px solid beige;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 425px) {
   .section1 img {
     width: 50%;
@@ -14008,6 +14037,35 @@ select {
   .chefs {
     height: 270vh;
   }
+  .bookingtbl {
+    height: 230vh;
+  }
+  .bookingtbl img {
+    width: 100%;
+    height: 35%;
+  }
+  .bookingtbl .booking-area {
+    height: 210vh;
+  }
+  .bookingtbl .booking-area .bookinginput {
+    width: 100%;
+    height: 70%;
+  }
+  .bookingtbl .booking-area .bookinginput .timing {
+    flex-wrap: wrap;
+    height: 40%;
+  }
+  .bookingtbl .booking-area .bookinginput .timing input {
+    width: 90%;
+    padding: 1.8vw;
+  }
+  .bookingtbl .booking-area .bookinginput textarea {
+    width: 90%;
+    height: 30%;
+  }
+  .bookingtbl .booking-area .bookinginput .booking-a-table {
+    height: 6vh;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .section1 {
@@ -14246,6 +14304,32 @@ select {
   }
   .chefs {
     height: 180vh;
+  }
+  .bookingtbl {
+    height: 180vh;
+  }
+  .bookingtbl img {
+    width: 100%;
+    height: 40%;
+  }
+  .bookingtbl .booking-area {
+    height: 160vh;
+  }
+  .bookingtbl .booking-area .bookinginput {
+    width: 100%;
+    height: 70%;
+  }
+  .bookingtbl .booking-area .bookinginput .timing {
+    flex-wrap: wrap;
+    height: 40%;
+  }
+  .bookingtbl .booking-area .bookinginput .timing input {
+    width: 40%;
+    padding: 1.5vw;
+  }
+  .bookingtbl .booking-area .bookinginput textarea {
+    width: 90%;
+    height: 40%;
   }
 }
 
