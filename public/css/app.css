@@ -13951,6 +13951,23 @@ select {
   #menu .items-tab .starter-table {
     display: block;
   }
+  .img {
+    width: 410px;
+    margin-right: 50px;
+  }
+  .input6 {
+    width: 350px;
+    margin-left: 20px;
+  }
+  .input7 {
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  .textarae {
+    width: 350px;
+    margin-left: 20px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .contenu {
@@ -14154,6 +14171,22 @@ select {
   }
   #menu .items-tab .starter-table {
     display: block;
+  }
+  .img {
+    width: 700px;
+  }
+  .input6 {
+    width: 500px;
+    margin-left: 85px;
+  }
+  .input7 {
+    width: 500px;
+    margin-left: 85px;
+    margin-top: 50px;
+  }
+  .textarae {
+    margin-left: 85px;
+    width: 500px;
   }
 }
 
