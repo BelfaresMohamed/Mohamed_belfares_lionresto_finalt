@@ -4,7 +4,7 @@ let menubar = document.querySelector(".menubar")
 let nav = document.querySelector('.nav')
 let minisect1 = document.querySelector(".minisect1")
 let watching = document.querySelector(".watching")
-let imgYtb = document.querySelector(".img-ytb")
+let screnyou = document.querySelector(".img-ytb")
 let body = document.body
 let h1 = document.querySelector('h1')
 
@@ -32,13 +32,12 @@ menubar.addEventListener("click", () => {
     }
 
 })
-// Vedio Youtube 
 
 watching.addEventListener("click", () => {
     minisect1.style.display = 'initial'
     minisect1.innerHTML += `<i class="cursor-pointer fas fa-xmark text-white-50 fs-1 position-fixed end-0 me-3 mt-2"></i>
     <iframe class="position-fixed top-50 start-50 translate-middle" width="650" height="480" src="https://www.youtube.com/embed/DGWKLguqjno" title="Soufiane Az x Cheikha Rimitti - Nouar (Remix)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
-    // close vedio
+    
     minisect1.style.zIndex = '4'
     let minisect1close = minisect1.querySelector("i")
     body.style.overflow = 'hidden';
@@ -52,7 +51,7 @@ watching.addEventListener("click", () => {
     })
 })
 
-imgYtb.addEventListener("click", () => {
+screnyou.addEventListener("click", () => {
     minisect1.style.display = 'initial'
     minisect1.innerHTML += `<i class="cursor-pointer fas fa-xmark text-white-50 fs-1 position-fixed end-0 me-3 mt-2"></i>
     <iframe class="position-fixed top-50 start-50 translate-middle" width="650" height="480" src="https://www.youtube.com/embed/DGWKLguqjno" title="Soufiane Az x Cheikha Rimitti - Nouar (Remix)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`

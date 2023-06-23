@@ -13393,7 +13393,7 @@ select {
   background-color: #660a0a;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   header {
     height: 10vh;
     font-size: 1.2vw;
@@ -13797,7 +13797,7 @@ select {
 }
 
 .contactus {
-  height: 220vh;
+  height: 190vh;
 }
 
 .contacting {
@@ -13838,7 +13838,7 @@ select {
   border: 1px solid black;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .section1 img {
     width: 50%;
   }
