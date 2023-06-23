@@ -13457,96 +13457,6 @@ select {
     width: 25%;
   }
 }
-.contenu {
-  width: 30vw;
-  height: 65vh;
-  border: 3px solid #ce1111;
-  position: fixed;
-  left: 50%;
-  top: 5%;
-  border-radius: 20px;
-  transform: translate(-50%, -5%);
-  background-color: rgba(255, 254, 254, 0.8823529412);
-  box-shadow: 6px 5px 4px 0px;
-  transition: 0.4s ease;
-  overflow: hidden;
-  z-index: 9999;
-  transition: 0.8s ease;
-  display: none;
-}
-.contenu .active-area {
-  background-color: #ce1111;
-  color: white !important;
-  transition: 0.5s ease;
-}
-
-.typeconnection {
-  height: 15%;
-}
-
-.signup,
-.login {
-  position: relative;
-  height: 85%;
-  display: none;
-}
-.signup input,
-.login input {
-  width: 80%;
-  height: 6vh;
-  background-color: transparent;
-  outline: 1px solid #ce1111;
-  margin-bottom: 1vh;
-  border-radius: 50px;
-  color: black;
-  text-align: center;
-  font-size: 1.2vw;
-  position: absolute;
-}
-.signup .singup-input,
-.login .singup-input {
-  height: 5vh;
-}
-.signup .singup-user,
-.login .singup-user {
-  top: 20%;
-  left: 10%;
-}
-.signup .singup-mail,
-.login .singup-mail {
-  top: 35%;
-  left: 10%;
-}
-.signup .singup-password,
-.login .singup-password {
-  top: 50%;
-  left: 10%;
-}
-.signup .singup-confirm,
-.login .singup-confirm {
-  top: 65%;
-  left: 10%;
-}
-.signup .singup-button,
-.login .singup-button {
-  left: 20%;
-  height: 7vh;
-}
-.signup .close-button,
-.login .close-button {
-  left: 60%;
-  height: 7vh;
-}
-
-.signupBTn,
-.loginBtn {
-  cursor: pointer !important;
-}
-
-.login {
-  display: block;
-}
-
 .section1 {
   height: 90vh;
   background-color: #eeeeee;
@@ -13833,23 +13743,31 @@ select {
   height: 100%;
 }
 
+.chefs {
+  height: 110vh;
+}
+.chefs .beige {
+  color: #b9b7ae;
+}
+.chefs .chef-social-media {
+  top: 10%;
+  right: -20%;
+  border-radius: 20px;
+  background-color: rgba(183, 176, 146, 0.537254902);
+}
+.chefs .chef-social-media i {
+  padding: 2vh 1vw;
+  color: rgba(234, 236, 177, 0.737254902);
+}
+.chefs .card {
+  overflow: hidden;
+}
+.chefs .card:hover .chef-social-media {
+  transition: 0.5s;
+  right: 5%;
+}
+
 @media screen and (max-width: 425px) {
-  .contenu {
-    background-color: #fffefe;
-    width: 90vh;
-    width: 90%;
-  }
-  .signup,
-  .login {
-    position: relative;
-    height: 85%;
-    display: none;
-  }
-  .signup input,
-  .login input {
-    font-size: 3.5vw;
-    height: 8vh;
-  }
   .section1 img {
     width: 50%;
   }
@@ -14087,23 +14005,11 @@ select {
   #radio5:checked ~ .second {
     margin-left: 0%;
   }
+  .chefs {
+    height: 270vh;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .contenu {
-    background-color: #fffefe;
-    width: 90%;
-  }
-  .signup,
-  .login {
-    position: relative;
-    height: 85%;
-    display: none;
-  }
-  .signup input,
-  .login input {
-    font-size: 3.5vw;
-    height: 8vh;
-  }
   .section1 {
     height: 150vh;
   }
@@ -14337,6 +14243,9 @@ select {
   }
   #radio5:checked ~ .second {
     margin-left: 0%;
+  }
+  .chefs {
+    height: 180vh;
   }
 }
 

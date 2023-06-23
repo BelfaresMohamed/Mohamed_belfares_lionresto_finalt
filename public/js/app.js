@@ -4,46 +4,11 @@ let menubar = document.querySelector(".menubar")
 let nav = document.querySelector('.nav')
 let minisect1 = document.querySelector(".minisect1")
 let watching = document.querySelector(".watching")
-let modalbtn = document.querySelector("#modal1")
-let modalContent = document.querySelector(".contenu")
-let signupBTn = document.querySelector(".signupBTn")
 let imgYtb = document.querySelector(".img-ytb")
 let body = document.body
-let loginBtn = document.querySelector(".loginBtn")
-let signup = document.querySelector(".signup")
 let h1 = document.querySelector('h1')
 
 
-// ouvrir le modal d'inscription
-modalbtn.addEventListener("click", () => {
-    modalContent.style.display = 'initial'
-})
-// fermer le modal 
-closeBtn.forEach(element => {
-    element.addEventListener("click", () => {
-        modalContent.style.display = 'none'
-    })
-
-});
-
-loginBtn.addEventListener("click", () => {
-    if (signupBTn.classList.contains("active-area")) {
-        signupBTn.classList.remove("active-area")
-        loginBtn.classList.add("active-area")
-        login.style.display = 'block'
-        signup.style.display = 'none'
-
-    }
-})
-signupBTn.addEventListener("click", () => {
-    if (loginBtn.classList.contains("active-area")) {
-        loginBtn.classList.remove("active-area")
-        signupBTn.classList.add("active-area")
-        login.style.display = 'none'
-        signup.style.display = 'block'
-
-    }
-})
 
 // BURGGER 
 menubar.addEventListener("click", () => {
