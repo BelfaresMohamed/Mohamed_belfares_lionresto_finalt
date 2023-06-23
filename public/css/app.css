@@ -13796,6 +13796,48 @@ select {
   border-radius: 8px;
 }
 
+.contactus {
+  height: 220vh;
+}
+
+.contacting {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacting-div {
+  height: 20vh;
+  width: 48%;
+}
+
+.dm-us {
+  width: 100%;
+  height: 80vh;
+  margin-top: 3vh;
+  box-shadow: 5px 5px #d3cece;
+}
+.dm-us .texting {
+  flex-wrap: wrap;
+  height: 20vh;
+}
+.dm-us .texting input {
+  width: 38vw;
+  padding: 0.5vw;
+  border: 1px solid black;
+}
+.dm-us .texting .subject {
+  width: 80vw;
+  padding: 0.5vw;
+  border: 1px solid black;
+}
+.dm-us textarea {
+  width: 80vw;
+  border: 1px solid black;
+}
+
 @media screen and (max-width: 425px) {
   .section1 img {
     width: 50%;
@@ -14065,6 +14107,17 @@ select {
   }
   .bookingtbl .booking-area .bookinginput .booking-a-table {
     height: 6vh;
+  }
+  .contacting {
+    display: block;
+    margin-top: 5px;
+  }
+  .contacting .contacting-div {
+    margin-bottom: 5px;
+    width: 90vw;
+  }
+  .btn {
+    height: 40px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
