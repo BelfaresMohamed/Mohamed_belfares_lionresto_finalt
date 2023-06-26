@@ -14117,7 +14117,12 @@ select {
     width: 90vw;
   }
   .btn {
-    height: 40px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .dm-us {
+    height: 320px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -14383,6 +14388,24 @@ select {
   .bookingtbl .booking-area .bookinginput textarea {
     width: 90%;
     height: 40%;
+  }
+  .dm-us {
+    height: 320px;
+    margin-bottom: 50px;
+  }
+}
+footer {
+  height: 30vh;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 426px) {
+  footer {
+    height: 90vh;
   }
 }
 

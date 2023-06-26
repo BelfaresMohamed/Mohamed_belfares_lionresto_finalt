@@ -94,7 +94,6 @@ starterBtn.addEventListener("click", () => {
 
 })
 
-//!2nd
 breakfeastBtn.addEventListener("click", () => {
     itemsTable.forEach(element => {
         if (element.classList.contains("breakfeast-table")) {
@@ -109,7 +108,6 @@ breakfeastBtn.addEventListener("click", () => {
     });
 
 })
-//! 3rd
 lunchBtn.addEventListener("click", () => {
     itemsTable.forEach(element => {
         if (element.classList.contains("lunch-table")) {
@@ -124,7 +122,6 @@ lunchBtn.addEventListener("click", () => {
     });
 
 })
-//! 4th
 dinnerBtn.addEventListener("click", () => {
     itemsTable.forEach(element => {
         if (element.classList.contains("dinner-table")) {
