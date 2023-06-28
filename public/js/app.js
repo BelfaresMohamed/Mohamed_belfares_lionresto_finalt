@@ -7,6 +7,27 @@ let watching = document.querySelector(".watching")
 let screnyou = document.querySelector(".img-ytb")
 let body = document.body
 let h1 = document.querySelector('h1')
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("modal1");
+let span = document.getElementsByClassName("close")[0]
+
+
+
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 
 
@@ -25,7 +46,7 @@ menubar.addEventListener("click", () => {
         nav.style.transition = "0.5s ease"
         menubar.style.zIndex = '3'
         menubar.classList.remove('fa-xmark')
-        body.style.overflow = 'auto';   
+        body.style.overflow = 'auto';
         menubar.classList.add('fa-bars')
         document.body.style.overflow = 'auto';
 
@@ -37,7 +58,7 @@ watching.addEventListener("click", () => {
     minisect1.style.display = 'initial'
     minisect1.innerHTML += `<i class="cursor-pointer fas fa-xmark text-white-50 fs-1 position-fixed end-0 me-3 mt-2"></i>
     <iframe class="position-fixed top-50 start-50 translate-middle" width="650" height="480" src="https://www.youtube.com/embed/DGWKLguqjno" title="Soufiane Az x Cheikha Rimitti - Nouar (Remix)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
-    
+
     minisect1.style.zIndex = '4'
     let minisect1close = minisect1.querySelector("i")
     body.style.overflow = 'hidden';
@@ -152,4 +173,5 @@ scroll_up.addEventListener("click", () => {
         behavior: "smooth",
     });
 })
+
 
